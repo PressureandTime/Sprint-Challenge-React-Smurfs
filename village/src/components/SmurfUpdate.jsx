@@ -22,7 +22,7 @@ export class SmurfUpdate extends Component {
       age: this.state.age,
       height: this.state.height
     });
-    this.setState({ id:'', name: '', age: '', height: '' });
+    this.setState({ id: '', name: '', age: '', height: '' });
     this.props.history.push('/');
   };
 
@@ -34,13 +34,9 @@ export class SmurfUpdate extends Component {
     });
 
     this.setState({ ...smurf });
-    console.log(smurfs);
-    console.log(smurf);
-    console.log(id);
   }
 
   render() {
-    
     return (
       <div>
         <h3>Form for updating a Smurf</h3>

@@ -97,10 +97,6 @@ class App extends Component {
                 updateSmurf={this.updateSmurf}
                 {...props}
                 smurfs={this.state.smurfs}
-                // oneSmurf={this.state.smurfs.find(smurf => {
-                //   console.log(this)
-                //   return smurf.id
-                // })}
               />
             );
           }}
