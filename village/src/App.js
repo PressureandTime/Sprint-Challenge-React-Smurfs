@@ -37,7 +37,6 @@ class App extends Component {
   };
 
   updateSmurf = (id, newSmurf) => {
-    console.log(id);
     axios
       .put(`http://localhost:3333/smurfs/${id}`, newSmurf)
       .then(response => {
@@ -53,6 +52,7 @@ class App extends Component {
   // Notice what your map function is looping over and returning inside of Smurfs.
   // You'll need to make sure you have the right properties on state and pass them down to props.
   render() {
+    console.log(this.state.smurfs);
     return (
       <div className="App">
         <nav>
@@ -97,6 +97,10 @@ class App extends Component {
                 updateSmurf={this.updateSmurf}
                 {...props}
                 smurfs={this.state.smurfs}
+                // oneSmurf={this.state.smurfs.find(smurf => {
+                //   console.log(this)
+                //   return smurf.id
+                // })}
               />
             );
           }}

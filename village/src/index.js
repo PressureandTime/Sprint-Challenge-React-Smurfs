@@ -6,7 +6,7 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
-  <Router forceRefresh={true}>
+  <Router>
     <App />
   </Router>,
   document.getElementById('root')
