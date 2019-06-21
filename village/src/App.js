@@ -30,6 +30,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <nav>
+          <div className="nav-links">
+            <NavLink exact to="/smurf-form">
+              <h2>Form for creating a new smurf</h2>
+            </NavLink>
+            <NavLink exact to="/">
+              <h2>Smurf village</h2>
+            </NavLink>
+          </div>
+        </nav>
         <Route
           path="/smurf-form"
           render={props => {
