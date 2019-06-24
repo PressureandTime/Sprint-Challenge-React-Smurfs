@@ -28,12 +28,29 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] What does HTTP stand for?
-- [ ] What does CRUD stand for?
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+- [ 1 ] Explain the differences between `client-side routing` and `server-side routing`.
+- [ 2 ] What does HTTP stand for?
+- [ 3 ] What does CRUD stand for?
+- [ 4 ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+- [ 5 ] Mention three tools we can use to make AJAX requests.
 
+## Self-Study/Essay Answers
+
+1. A server-side routing causes the whole page to refresh. This is because a new GET request is sent to the server which responds with a new document, completely discarding the old page altogether.
+A client-side route happens when the route is handled internally by the JavaScript that is loaded on the page. When a user clicks on a link, the URL changes but the request to the server is prevented. The adjustment to the URL will result in a changed state of the application
+
+2. HTTP stands for Hyper Text Transfer Protocol
+Communication between client computers and web servers is done by sending HTTP Requests
+ and receiving HTTP Responses
+
+3. The acronym CRUD refers to all of the major functions that are implemented in relational database applications - create, read, update and delete. 
+
+4. Create = PUT with a new URI, POST to a base URI returning a newly created URI
+Read = GET
+Update = PUT with an existing URI
+Delete = DELETE
+
+5. Axios, Fetch and Jquery
 
 ## Project Set Up
 
